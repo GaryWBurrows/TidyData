@@ -57,9 +57,13 @@ The data sets are contained in a directory titled "**UCI HAR Dataset**" which is
 
 
 ###Tidy Data Set 1###
-The first tidy data produced from the raw data combines the measurements from the test and train data sets associated with the variables which correspond to means and standard deviations with the activity performed, and the subject performing the activity. This combination results in 81 variables of type Real Number and 2 variables of type Categorical (Subject and Activity). The data set will have a total of 83 columns. The number of rows will be the sum of the number of rows from the Test and Train data sets. For the purpose of providing descriptive names the subjectTest and subjectTrain values are replaced with values form the set {Subject_1, Subject_2, ..., Subject_30}.
+The first tidy data produced from the raw data combines the measurements from the test and train data sets associated with the variables which correspond to means and standard deviations with the activity performed, and the subject performing the activity. This combination results in 81 variables of type Real Number and 2 variables of type Categorical (Subject and Activity). The data set will have a total of 83 columns. The number of rows will be the sum of the number of rows from the Test and Train data sets. For the purpose of providing descriptive names the subjectTest and subjectTrain values are replaced with values form the set {Subject_1, Subject_2, ..., Subject_30}. The table will have the structure given below
+
+![](http://i.imgur.com/Dwau211.png)
 
 ### Tidy Data Set 2 ###
-Tidy data set 2 was formed from tidy data set 1 by computing the mean for each variable's set of measurements aggregated by (subject,activity) pair. This will product a data set with all unique combinations of (subject, activity) and 81 corresponding means. This file is written to the file ***tidy_set2.txt***. For the purpose of descriptive names the names if the 81 variables were augmented with **Mean[** "name of variable" **]**. This data set is also returned as a data table.
+Tidy data set 2 was formed from tidy data set 1 by computing the mean for each variable's set of measurements aggregated by (subject,activity) pair. This will product a data set with all unique combinations of (activity, subject) and 81 corresponding means per row. As there are 6 activities and 30 subjects the file will have 180 rows. Each row will contain an activity, subject, and 81 numbers (which are the means). This file is written to the file ***tidy_set2.txt***. For the purpose of descriptive names the names if the 81 variables were augmented with **Mean[** "name of variable" **]**. This data set is also returned as a data table. The table will have the structure given below.
+
+![](http://i.imgur.com/fgNWBEh.png)
 
 
