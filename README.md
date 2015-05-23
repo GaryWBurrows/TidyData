@@ -25,7 +25,7 @@ The analysis is accomplished in 6 stages.
 
 The R script, titled "**run_analysis.R**" that constructs the tidy data sets and produces the summary requires the packages data.table and dplyr. The script contains a single function called **run_analysis()**.
 
-The function run_analysis() has 4 functional blocks: Getting the Data, Loading the data, Merging the data, Tidying the data. Below is a summary of the code used.
+The function run_analysis() has 4 functional blocks: Getting the Data, Loading the data, Merging the data, Tidying the data. Below is a summary of the code used for run_analysis.R.
 
 
 ## Getting the Data##
